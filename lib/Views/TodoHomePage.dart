@@ -156,7 +156,7 @@ class _MyHomePageState extends State<TodoHomePage> {
                                               : fetchedList[index].isplay = false;
                                           setState(() {});
                                           if (!fetchedList[index].isplay) {
-                                            _start = 10;
+                                            _start = 60;
                                             startTimer(index);
                                           } else {
                                             print(fetchedList[index].timer );
@@ -219,7 +219,7 @@ class _MyHomePageState extends State<TodoHomePage> {
           fetchedList[index].timer =
               list[0] + ":" + (int.parse(list[1]) + 1).toString();
           setState(() {
-              _start = 10;
+              _start = 60;
           });
         } else {
           print(_start);
